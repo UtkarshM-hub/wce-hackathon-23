@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times new Roman',sans-serif;
+    line-height: 1.4;
+    grid: 
+    "nav home",
+    "nav faq",
+    "nav problem",
+    "nav prizes",
+    "nav sponcers",
+    "footer footer";
+}
+
+/* Utility Classes */
+.text-center{
+    text-align: center;
+}
+.p10 {padding: 10px;}
+.p20 {padding: 20px;}
+.p30 {padding: 30px;}
+
+.l-heading{ 
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading{ 
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* Grid Classes */
+.nav-bar {grid-area: nav;}
+.home{
+    grid-area: home;
+height: 100vh;
+background-image: url(./img.webp) center center/ cover;
+}
+.faq {grid-area: faq;}
+.problem {grid-area: problem;}
+.prizes {grid-area: prizes;}
+.sponcers {grid-area: sponcers;}
+.footer{ grid-area: footer;}
